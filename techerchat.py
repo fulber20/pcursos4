@@ -12,8 +12,7 @@ import scipy
 import gradio as gr
 from getpass import getpass
 import os
-# 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
-# Solicitar la API Key de OpenAI
+
 OPENAI_API_KEY = getpass('Enter the secret value: ')
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY  # Corregí el nombre de 'envirion' a 'environ'
 llm = ChatOpenAI(model='gpt-4')
